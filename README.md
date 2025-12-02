@@ -76,22 +76,4 @@ streamlit run app.py
 
 Browser: The app will open automatically at http://localhost:8501.
 
-🎤 Interview / Presentation Script
-
-Use these bullet points when describing your work:
-
-Q: Why did you combine OpenCV and Deep Learning?
-
-"I used OpenCV for the visual analysis pipeline to show how image features like edges and contrast are extracted. However, for the actual classification, Deep Learning (ResNet) is far more robust to variations in lighting and angle than manual thresholding."
-
-Q: Why ResNet18?
-
-"It's a perfect balance between performance and speed. It solves the 'vanishing gradient' problem using skip connections, making it highly effective for feature extraction without being too heavy for a web deployment."
-
-Q: How did you handle the data?
-
-"I sourced the PlantVillage dataset. I used a custom script in Google Colab to automatically handle the directory structure, split the data into training and validation sets, and normalize the images to match ResNet's input requirements (Mean/Std)."
-
-Q: What is the 'Heatmap' (Grad-CAM)?
-
-"It represents Explainable AI (XAI). In a real-world scenario, we don't just want a prediction; we want to know why. The heatmap highlights the pixels that activated the neural network the most, confirming that the model is actually looking at the disease spots and not just the background."
+Live Project Preview: https://agrodoctor-plant-disease-e5uq5wyurwdpelkepkgzgz.streamlit.app/
